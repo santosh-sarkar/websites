@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="footer.css">
+  </head>
+
+  <body>
+
+   <!-- nabbar -->
+
+   <nav class="navbar navbar-expand-lg bg-body-tertiary navcolor sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand"  href="#"><img style="height: 40px; width:70px;" src="qfx.png" alt=""></a>
+      <a class="navbar-brand me-auto"  href="index.html"><i class="bi bi-house moviesicon"></i> Home</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse px-2" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Latest Movies</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Services
+            </a>
+            <ul class="dropdown-menu navcolor">
+              <li><a class="dropdown-item" href="#">Complain</a></li>
+              <li><a class="dropdown-item" href="#">About US</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Developers</a></li>
+            </ul>
+          </li>
+          <!-- <li class="nav-item">
+            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+          </li> -->
+        </ul>
+        <!-- <form class="d-flex" role="search"> -->
+            <!-- <ul>
+                <li> -->
+                    <!-- <a href=""><button>Log-In</button></a> -->
+ <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary  butn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    <i class="bi bi-person-fill-add"></i> Log-in
+  </button>
+<!-- </form> -->
+</div>
+</div>
+</nav>
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog ">
+      <div class="modal-content model-con">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5 white" id="exampleModalLabel">SIGN IN</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div>
+            <input class="inp" type="text" placeholder="Email" required>
+          </div>
+          <div>
+            <input class="inp" type="password" placeholder="Password" required>
+          </div>
+          <button type="button" class="btn btn-primary butn">Sign-In</button>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary butn">FORGOT PASSWORD ?</button>
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary butn" data-bs-toggle="modal" data-bs-target="#example1Modal">
+               SIGN UP
+            </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  
+<!-- Modal -->
+<div class="modal fade " id="example1Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog ">
+    <div class="modal-content model-con">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5 white" id="exampleModalLabel">SIGN UP</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <label class="white" for="">Mobile Number</label>
+        <div>
+          <input class="inp" type="number" placeholder="+977(nepal)" required>
+        </div>
+        <label class="white" for="">Email</label>
+        <div>
+          <input class="inp" type="email" placeholder="abc@gmail.com" required>
+        </div >
+        <label class="white" for="">Date Of Birth</label>
+        <div>
+          <input class="white" style="background-color: transparent; border: none;border-bottom: 1px solid aliceblue; margin-bottom: 1vh;" type="date" required>
+        </div>
+       
+        <div class="row model">
+          <div class="col-4 white">First Name</div>
+          <div class="col-4 white">Middle Name</div>
+          <div class="col-4 white">Last Name</div>
+        </div>
+        <div class="row model" style="margin-bottom: 1vh;">
+          <div class="col-4" ><input type="text" placeholder="First" required></div>
+          <div class="col-4" ><input type="text" placeholder="MIddle"></div>
+          <div class="col-4" ><input type="text" placeholder="Last" required></div>
+        </div>
+        <div>
+          <label class="white" for="">Password</label>
+          <input  class="inp" type="password" placeholder="Enter your password" required>
+        </div>
+        <div>
+          <span><input type="checkbox" required></span><label class="white" for=""> I agree to all <span class="yellow">Terms & Conditions</span></label>
+        </div>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary butn" data-bs-dismiss="modal">confirm</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+  <!-- slider -->
+  <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <a href="https://www.qfxcinemas.com/now-showing-booking/132/2/All/-">
+          <img src="shahid.png" class="d-block w-100" alt="...">
+        </a>
+      </div>
+      <div class="carousel-item">
+        <a href="https://www.qfxcinemas.com/now-showing-booking/135/116/All/-">
+          <img src="dayarani.png" class="d-block w-100" alt="...">
+        </a>
+      </div>
+      <div class="carousel-item">
+        <a href="https://www.qfxcinemas.com/now-showing-booking/125/116/All/-">
+          <img src="hattichhap.png" class="d-block w-100" alt="...">
+        </a>
+      </div>
+    </div>
+  </div>
+
+ <hr style="border: 3px solid; margin-top:0px;">
+
+  <!-- grid -->
+  <div class="container-fluid">
+
+    <div class="grid">
+      <span><h1>NOW SHOWING</h1></span>
+    </div>
+  
+    <div class="row">
+      <div class="col-6 col-md-4 col-lg-2 card-down"><a href="detail.html">
+        <img src="shahid.webp" class="img-thumbnail" alt="..."></a>
+      </div>
+      <div class="col-6  col-md-4 col-lg-2 card-down"><a href="https://www.qfxcinemas.com/now-showing-booking/125/116/All/-">
+        <img src="Hattichhap-l.webp" class="img-thumbnail" alt="..."></a>
+      </div>
+      <div class="col-md-4 col-lg-2  col-6 card-down"><a href="https://www.qfxcinemas.com/now-showing-booking/135/116/All/-">
+        <img src="Dayarani-l.webp" class="img-thumbnail" alt="..."></a>
+      </div>
+    </div>
+  
+    <hr style="border: 3px solid;">
+
+    <div class="grid">
+      <span><h1>COOMING SOON....</h1></span>
+    </div>
+    <div class="row">
+      <div class="col-md-4 col-lg-2  col-6  card-down"><img src="shahid.webp" class="img-thumbnail" alt="..."></div>
+      <div class="col-md-4 col-lg-2  col-6  card-down"><img src="Hattichhap-l.webp" class="img-thumbnail" alt="..."></div>
+      <div class="col-md-4 col-lg-2  col-6  card-down"><img src="Dayarani-l.webp" class="img-thumbnail" alt="..."></div>
+      <div class="col-md-4 col-lg-2  col-6  card-down"><img src="shahid.webp" class="img-thumbnail" alt="..."></div>
+      <div class="col-md-4 col-lg-2  col-6  card-down"><img src="Hattichhap-l.webp" class="img-thumbnail" alt="..."></div>
+      <!-- <div class="col-2"><img src="Dayarani-l.webp" class="img-thumbnail" alt="..."></div> -->
+    </div>
+  </div>
+
+  
+ <!-- footer -->
+ <hr>
+ <footer>
+    <div class="footercontainer">
+        <div class="socialicons">
+            <a href=""><i class="bi bi-facebook"></i></a>
+            <a href=""><i class="bi bi-instagram"></i></a>
+            <a href=""><i class="bi bi-google"></i></a>
+            <a href=""><i class="bi bi-twitter"></i></a>
+        </div>
+        <div class="footernav">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">News</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">contact Us</a></li>
+            </ul>
+        </div>
+     </div>
+    <div class="footerbottom">
+            <div>Copyright &copy;2024;</div>
+            <div>Designed by  <span class="designer">Santosh Sarkar</span></div>
+     </div>
+</footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>
